@@ -29,7 +29,7 @@ This is where columns are scaled down to smaller numbers so:
 - models like Linear Regression can generate comparable weights
 - models like Support Vector Machines can converge quicker
   
-Tree models like Random Forest and XGBoost don't need feature scaling because they filter the data instead of navigating a gradient.
+Tree models like Random Forest and XGBoost don't need feature scaling because they filter the data.
 
 ## Feature Selection
 Models like Lasso Regression, Neural Networks, Random Forest, and XGBoost handle feature selection internally when training. Otherwise, it is wise to use Recursive Feature Elimination to remove the least important columns from the data to speed up training time without sacrificing performance.
