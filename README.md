@@ -1,5 +1,5 @@
 # Machine-Learning-Process
-Overview of the machine learning process. This covers supervised machine learning for offline learning.
+Overview of the machine learning process. This covers supervised machine learning for offline learning. In online learning there is no **Model Tuning** step because the model is being updated in real-time.
 
 ![alt text](https://github.com/nicholasjmorris1993/Machine-Learning-Process/blob/main/machine_learning_pipeline.png)
 
@@ -41,3 +41,6 @@ Good options for modeling are:
 
 ## Model Tuning
 The most common way to tune a machine learning model is with a Grid Search. In a Grid Search, a variety of parameter combinations is generated for a single model. Then each parameterization is trained on 60% of the data. Then each parameterization is asked to predict on 20% of the data, which it did not see during training. Those predictions are used to score the performance on unseen data. The top-performing parameterizations are then retrained on 80% of the data (the original 60% and the 20% used for scoring performance). Finally, the final set of parameterizations are scored on the last 20% of the data, which they haven't seen at all. The best performer is the model for deployment, and gets retrained on all the data before deployment.
+
+## Deployment
+In deployment there are specification limits that the model must adhere to at all times. When the model consistently fails to meet the specs, then the model must be sent back to **Model Tuning** or **Data Processing**. The definition of consistently failing is based on Control Chart diagnostics which including drifting, a number of direct violations in a row, and fraction of time spent deviating near the limits.
