@@ -10,6 +10,7 @@ This is where queries are run against a database to pull in structured data. Mac
 
 ## Data Processing
 This is where:
+- multiple tables are combined into one table
 - text data is tokenized into numbers
 - categories are converted into binary form
 - missing values are predicted
