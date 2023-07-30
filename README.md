@@ -1,7 +1,7 @@
 # Machine-Learning-Process
 Overview of the machine learning process. 
   
-This covers supervised machine learning for offline learning. In online learning there is no **Model Tuning** step because the model is being updated in real-time. In the picture below there should be arrows going from **Deployment** to **Model Tuning** and to **Data Processing**, for when performance in deployment is poor.
+This covers supervised machine learning. In the picture below there should be arrows going from **Deployment** to **Model Tuning** and to **Data Processing**, for when performance in deployment is poor.
 
 ![alt text](https://github.com/nicholasjmorris1993/Machine-Learning-Process/blob/main/machine_learning_pipeline.png)
 
