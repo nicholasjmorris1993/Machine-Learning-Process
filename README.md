@@ -1,5 +1,5 @@
 # Machine-Learning-Process
-Overview of the machine learning process
+Overview of the machine learning process. This covers supervised machine learning for offline learning.
 
 ![alt text](https://github.com/nicholasjmorris1993/Machine-Learning-Process/blob/main/machine_learning_pipeline.png)
 
@@ -31,3 +31,13 @@ Tree models like Random Forest and XGBoost don't need feature scaling because th
 ## Feature Selection
 Models like Lasso Regression, Neural Networks, Random Forest, and XGBoost handle feature selection internally when training. Otherwise, it is wise to use Recursive Feature Elimination to remove the least important columns from the data to speed up training time without sacrificing performance.
 
+## Modeling
+Good options for modeling are:
+- XGBoost
+- Neural Networks
+- Random Forest
+- Support Vector Machines
+- Lasso Regression
+
+## Model Tuning
+The most common way to tune a machine learning model is with a Grid Search. In a Grid Search, a variety of parameter combinations is generated for a single model. Then each parameterization is trained on 60% of the data. Then each parameterization is asked to predict on 20% of the data, which is did not see during training. Those predictions are used to score the performance on unseen data. The top-performing parameterizations are then retrained on 80% of the data (the original 60% and the 20% used for scoring performance). Finally, the final set of parameterizations are scored on the last 20% of the data, which they haven't seen at all. The best performer is the model for deployment, and gets retrained on all the data before deployment.
