@@ -25,5 +25,6 @@ This is where columns are scaled down to smaller numbers so:
 - models like neural networks can converge
 - models like linear regression can generate comparable weights
 - models like support vector machines can converge quicker
+  
 Tree models like random forest and xgboost don't need feature scaling because they filter the data instead of navigating a gradient
 
