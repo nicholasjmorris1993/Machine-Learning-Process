@@ -19,3 +19,11 @@ This is where:
 - polynomial combinations can be generated to expand the number of columns
 - dimension reduction can be done by merging the columns into a smaller set of columns while minimizing information loss
 - non-linear information can be extracted and encoded into new columns to make relationships in the dataset more obvious to models
+
+## Feature Scaling
+This is where columns are scaled down to smaller numbers so:
+- models like neural networks can converge
+- models like linear regression can generate comparable weights
+- models like support vector machines can converge quicker
+Tree models like random forest and xgboost don't need feature scaling because they filter the data instead of navigating a gradient
+
